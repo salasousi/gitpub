@@ -3,6 +3,12 @@ const app = express();
 const port = 3003;
 const drinks = require("./models/drinks.js")
 
+app.get("/drinks/", (req, res) =>{
+    res.render("drinks_index.ejs", {
+      allDrinks: drinks
+    })
+  })
+
 
 app.get("/", (req, res) =>{
     res.send("Welcome to the Gitpub App!")
