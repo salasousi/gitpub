@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3003;
+const drinks = require("./models/drinks.js")
 
 
 app.get("/", (req, res) =>{
