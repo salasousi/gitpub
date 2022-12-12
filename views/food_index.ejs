@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,7 +7,7 @@
     <title>Gitpub App</title>
     <%- include('../views/partials/head'); %>
     <style type="text/css">
-         body {
+        body {
           color: cornsilk;
           background-color: #2C335B;
           text-transform: capitalize;
@@ -28,15 +27,15 @@
     <header>
         <%- include('../views/partials/header'); %>
     </header>
-    
+
     <main>
         <div class="jumbotron">
             <ul>
-            <% for (let x = 0; x < allDrinks.length; x++) { %>
+                <% for (let x = 0; x < allFoods.length; x++) { %>
                 <li>
-                    <a href="/drinks/<%=x%>"><%=allDrinks[x].name %></a>
+                    <a href="/food/<%=x%>"><%=allFoods[x].name %></a>
                 </li>
-            <% } %>
+                <% } %>
             </ul>
         </div>
     </main>
