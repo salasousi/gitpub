@@ -17,7 +17,16 @@ app.get("/", (req, res) =>{
 
 app.get("/drinks/", (req, res) => {
     res.send(drinks)
-  })
+  });
+
+
+app.get("/drinks/:id", (req, res) => {
+    res.send(drinks[req.params.id])
+    // res.render("drinks_show.ejs", {
+    //   //second param has to be an object
+    //   drink: drinks[req.params.id]
+    // })
+});
 
 
 app.listen(port, () =>{
